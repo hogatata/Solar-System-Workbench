@@ -5,7 +5,7 @@ public class AppBootstrapper : MonoBehaviour
 {
     public SolarSystemConfig config;
     public PlanetView[] planets;
-
+    public TimeController timeController;
     TimeModel timeModel;
     PlanetSystemController controller;
 
@@ -20,7 +20,6 @@ public class AppBootstrapper : MonoBehaviour
 
         controller = new PlanetSystemController(timeModel, ephemeris, planets);
 
-        // Kick off the simulation with the current date
-        timeModel.SetTime(DateTime.Now);
+        timeController.Init(timeModel);
     }
 }
