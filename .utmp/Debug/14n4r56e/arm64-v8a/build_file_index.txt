@@ -1,0 +1,2 @@
+/Users/hugo/RVSI/Solar-System-Workbench/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/hugo/RVSI/Solar-System-Workbench/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
