@@ -5,7 +5,7 @@ public class AppBootstrapper : MonoBehaviour
 {
     public SolarSystemConfig config;
     public PlanetView[] planets;
-
+    public TimeController timeController;
     TimeModel timeModel;
     PlanetSystemController controller;
 
@@ -18,9 +18,8 @@ public class AppBootstrapper : MonoBehaviour
         // Pass the config into the service
         var ephemeris = new PlanetEphemerisService(config);
 
-        controller = new PlanetSystemController(timeModel, ephemeris, planets);
+        controller = new PlanetSystemController(timeModel, ephemeris, planets, config);
 
-        // Kick off the simulation with the current date
-        timeModel.SetTime(DateTime.Now);
+        timeController.Init(timeModel);
     }
 }
