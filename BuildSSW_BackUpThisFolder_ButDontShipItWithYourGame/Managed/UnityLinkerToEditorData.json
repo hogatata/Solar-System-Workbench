@@ -1013,9 +1013,7 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [
-              "Assets/Scenes/Boot.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -1055,15 +1053,15 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [
-              "Assets/Scenes/Boot.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "SphereCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Boot.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

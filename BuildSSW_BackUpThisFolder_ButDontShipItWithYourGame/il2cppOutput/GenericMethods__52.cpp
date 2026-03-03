@@ -9520,7 +9520,7 @@ IL_0014:
 		return L_1;
 	}
 }
-// Method Definition Index: 98539
+// Method Definition Index: 98568
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRManagerUtility_IsLoaderActive_TisRuntimeObject_mD343517453BD38D763D6B3A8EFF70C9599C9D0B8_gshared (const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))

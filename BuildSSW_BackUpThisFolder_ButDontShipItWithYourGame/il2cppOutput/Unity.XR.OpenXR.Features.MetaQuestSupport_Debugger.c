@@ -33,21 +33,21 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_MetaQuestSupport[];
 Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_MetaQuestSupport[15] = 
 {
-	{ 98703, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
-	{ 98703, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
-	{ 98703, 1, 42, 42, 9, 10, 0, kSequencePointKind_Normal, 0, 2 },
-	{ 98703, 1, 43, 49, 13, 15, 1, kSequencePointKind_Normal, 0, 3 },
-	{ 98703, 1, 43, 49, 13, 15, 24, kSequencePointKind_StepOut, 0, 4 },
-	{ 98703, 1, 43, 49, 13, 15, 52, kSequencePointKind_StepOut, 0, 5 },
-	{ 98703, 1, 50, 50, 9, 10, 90, kSequencePointKind_Normal, 0, 6 },
-	{ 98705, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 7 },
-	{ 98705, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 8 },
-	{ 98705, 2, 58, 58, 9, 10, 0, kSequencePointKind_Normal, 0, 9 },
-	{ 98705, 2, 64, 64, 9, 10, 1, kSequencePointKind_Normal, 0, 10 },
-	{ 98706, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 11 },
-	{ 98706, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 12 },
-	{ 98706, 2, 67, 67, 9, 10, 0, kSequencePointKind_Normal, 0, 13 },
-	{ 98706, 2, 81, 81, 9, 10, 1, kSequencePointKind_Normal, 0, 14 },
+	{ 98732, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
+	{ 98732, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
+	{ 98732, 1, 42, 42, 9, 10, 0, kSequencePointKind_Normal, 0, 2 },
+	{ 98732, 1, 43, 49, 13, 15, 1, kSequencePointKind_Normal, 0, 3 },
+	{ 98732, 1, 43, 49, 13, 15, 24, kSequencePointKind_StepOut, 0, 4 },
+	{ 98732, 1, 43, 49, 13, 15, 52, kSequencePointKind_StepOut, 0, 5 },
+	{ 98732, 1, 50, 50, 9, 10, 90, kSequencePointKind_Normal, 0, 6 },
+	{ 98734, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 7 },
+	{ 98734, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 8 },
+	{ 98734, 2, 58, 58, 9, 10, 0, kSequencePointKind_Normal, 0, 9 },
+	{ 98734, 2, 64, 64, 9, 10, 1, kSequencePointKind_Normal, 0, 10 },
+	{ 98735, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 11 },
+	{ 98735, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 12 },
+	{ 98735, 2, 67, 67, 9, 10, 0, kSequencePointKind_Normal, 0, 13 },
+	{ 98735, 2, 81, 81, 9, 10, 1, kSequencePointKind_Normal, 0, 14 },
 };
 #else
 extern Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_MetaQuestSupport[];
@@ -70,8 +70,8 @@ static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[1] = { NUL
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[2] = 
 {
-	{ 12285, 1 },
-	{ 12287, 2 },
+	{ 12303, 1 },
+	{ 12305, 2 },
 };
 #else
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = { { 0, 0 } };
