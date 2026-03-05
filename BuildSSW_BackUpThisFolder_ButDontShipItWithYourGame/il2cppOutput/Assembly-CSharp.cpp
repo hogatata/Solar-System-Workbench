@@ -2509,12 +2509,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppBootstrapper_Start_mD90B984181867A1C4
 		TimeModel__ctor_mF88124F338842BFEDA37F1E0530EFA931DCA9534(L_0, NULL);
 		__this->___timeModel = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___timeModel), (void*)L_0);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:19>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:18>
 		SolarSystemConfig_tE69174DA3F19231A84DF400DC89DAEF9BEC67679* L_1 = __this->___config;
 		PlanetEphemerisService_t7443928C4AE29216ABAB23BA9C3D7F73E57782BB* L_2 = (PlanetEphemerisService_t7443928C4AE29216ABAB23BA9C3D7F73E57782BB*)il2cpp_codegen_object_new(PlanetEphemerisService_t7443928C4AE29216ABAB23BA9C3D7F73E57782BB_il2cpp_TypeInfo_var);
 		PlanetEphemerisService__ctor_mC58EFD5E693CAD98A96600322EAB986F24CB2084(L_2, L_1, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:21>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:20>
 		TimeModel_t16071A688191058375A1AF75A4717489DC8F76EC* L_3 = __this->___timeModel;
 		PlanetEphemerisService_t7443928C4AE29216ABAB23BA9C3D7F73E57782BB* L_4 = V_0;
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_5 = __this->___planets;
@@ -2523,12 +2523,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppBootstrapper_Start_mD90B984181867A1C4
 		PlanetSystemController__ctor_m614885AF55B80A38D249ACBD7582BFBFF4C9CEA2(L_7, L_3, L_4, L_5, L_6, NULL);
 		__this->___controller = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___controller), (void*)L_7);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:23>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:22>
 		TimeController_t88BC4B61475E406AB50F5164D3BE736032BDB92B* L_8 = __this->___timeController;
 		TimeModel_t16071A688191058375A1AF75A4717489DC8F76EC* L_9 = __this->___timeModel;
 		NullCheck(L_8);
 		TimeController_Init_m5963631F4A2D75BFB3199CF2E74C43E9F97A137F(L_8, L_9, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:24>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Bootstrap/AppBootstrapper.cs:23>
 		return;
 	}
 }
@@ -2736,16 +2736,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugOverlay_Update_m54D0F7FA63E30040C11
 	}
 	float V_0 = 0.0f;
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:29>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:28>
 		float L_0 = __this->___deltaTime;
 		float L_1;
 		L_1 = Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5(NULL);
 		float L_2 = __this->___deltaTime;
 		__this->___deltaTime = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), (0.100000001f)))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:30>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:29>
 		float L_3 = __this->___deltaTime;
 		V_0 = ((float)((1.0f)/L_3));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:31>
 		TimeModel_t16071A688191058375A1AF75A4717489DC8F76EC* L_4 = __this->___timeModel;
 		if (!L_4)
 		{
@@ -2753,8 +2753,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugOverlay_Update_m54D0F7FA63E30040C11
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:35>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:34>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___statsText;
 		float L_6 = V_0;
 		float L_7;
@@ -2788,7 +2788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugOverlay_Update_m54D0F7FA63E30040C11
 
 IL_0093:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/DebugOverlay.cs:36>
 		return;
 	}
 }
@@ -3030,7 +3030,7 @@ IL_0032_1:
 
 IL_004b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:29>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:28>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_10 = __this->___currentFocus;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_11 = ___0_selectedPlanet;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -3042,24 +3042,24 @@ IL_004b:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:31>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:30>
 		__this->___currentFocus = (PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentFocus), (void*)(PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5*)NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:31>
 		PlanetInfoPanel_t3C2016D998007D904C3D056DBE29A78595E3BCA9* L_13 = __this->___infoPanel;
 		NullCheck(L_13);
 		PlanetInfoPanel_Hide_m2AF08E4A5C076E2D60B999DBA3A6A4FB42512030(L_13, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:32>
 		return;
 	}
 
 IL_006c:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:37>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:35>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_14 = ___0_selectedPlanet;
 		__this->___currentFocus = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentFocus), (void*)L_14);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:36>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_15 = __this->___currentFocus;
 		NullCheck(L_15);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
@@ -3074,7 +3074,7 @@ IL_006c:
 		L_21 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_19, L_20, NULL);
 		NullCheck(L_16);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_16, L_21, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:41>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:38>
 		PlanetInfoPanel_t3C2016D998007D904C3D056DBE29A78595E3BCA9* L_22 = __this->___infoPanel;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_23 = __this->___currentFocus;
 		NullCheck(L_23);
@@ -3088,7 +3088,7 @@ IL_006c:
 		L_28 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_27, NULL);
 		NullCheck(L_22);
 		PlanetInfoPanel_ShowName_m2AE0622C1ECE7AC153693419E0AB32DF4C5563A7(L_22, L_26, L_28, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:42>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/FocusController.cs:39>
 		return;
 	}
 }
@@ -3151,15 +3151,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSystemController__ctor_m614885AF55
 		SolarSystemConfig_tE69174DA3F19231A84DF400DC89DAEF9BEC67679* L_3 = ___3_config;
 		__this->___config = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___config), (void*)L_3);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:19>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:18>
 		TimeModel_t16071A688191058375A1AF75A4717489DC8F76EC* L_4 = __this->___timeModel;
 		Action_1_t53FBC0BFE69883C647FC168F3E2591BE05BFBE1B* L_5 = (Action_1_t53FBC0BFE69883C647FC168F3E2591BE05BFBE1B*)il2cpp_codegen_object_new(Action_1_t53FBC0BFE69883C647FC168F3E2591BE05BFBE1B_il2cpp_TypeInfo_var);
 		Action_1__ctor_mD7756DCD2F07CD6207A72D5669CDBD9A967E1659(L_5, __this, (intptr_t)((void*)PlanetSystemController_UpdatePlanets_mC40EB07A751A1EC6B4E8F4D6DE462D2DD7E7615A_RuntimeMethod_var), NULL);
 		NullCheck(L_4);
 		TimeModel_add_OnTimeChanged_m08D20382DA01839697DCEEB9049253E4AA7EE36B(L_4, L_5, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:22>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:20>
 		PlanetSystemController_InitializeOrbits_m3C6D35C8085D06420C21A2E22EDF852D6DC5724F(__this, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:23>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:21>
 		return;
 	}
 }
@@ -3185,14 +3185,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSystemController_InitializeOrbits_
 	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_7;
 	memset((&V_7), 0, sizeof(V_7));
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:29>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:26>
 		V_0 = ((int32_t)6000);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:30>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:27>
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
 		L_0 = DateTime_get_Now_m636CB9651A9099D20BA1CF813A0C69637317325C(NULL);
 		V_1 = L_0;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:29>
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_1 = __this->___planets;
 		V_2 = L_1;
 		V_3 = 0;
@@ -3201,31 +3201,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSystemController_InitializeOrbits_
 
 IL_0017:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:29>
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_2 = V_2;
 		int32_t L_3 = V_3;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		V_4 = L_5;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:34>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:31>
 		int32_t L_6 = V_0;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_7 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_6);
 		V_5 = L_7;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:33>
 		V_6 = 0;
 		goto IL_005b;
 	}
 
 IL_0029:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:35>
 		int32_t L_8 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_9;
 		L_9 = DateTime_AddDays_m9DC06105845A82FEAF697D5E30308ABD49E5721B((&V_1), ((double)((int32_t)il2cpp_codegen_multiply(L_8, ((int32_t)10)))), NULL);
 		V_7 = L_9;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:39>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:36>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_10 = V_5;
 		int32_t L_11 = V_6;
 		RuntimeObject* L_12 = __this->___ephemeris;
@@ -3238,14 +3238,14 @@ IL_0029:
 		L_16 = InterfaceFuncInvoker2< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, int32_t, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(0, IPlanetEphemerisService_tBE8082A231527B804C437A797C7F14AFADE4F95F_il2cpp_TypeInfo_var, L_12, L_14, L_15);
 		NullCheck(L_10);
 		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_16);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:33>
 		int32_t L_17 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_17, 1));
 	}
 
 IL_005b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:33>
 		int32_t L_18 = V_6;
 		int32_t L_19 = V_0;
 		if ((((int32_t)L_18) < ((int32_t)L_19)))
@@ -3254,7 +3254,7 @@ IL_005b:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:43>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:39>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_20 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_21 = V_5;
 		SolarSystemConfig_tE69174DA3F19231A84DF400DC89DAEF9BEC67679* L_22 = __this->___config;
@@ -3268,7 +3268,7 @@ IL_005b:
 
 IL_0078:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:29>
 		int32_t L_25 = V_3;
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_26 = V_2;
 		NullCheck(L_26);
@@ -3278,7 +3278,7 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:45>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:41>
 		return;
 	}
 }
@@ -3297,7 +3297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSystemController_UpdatePlanets_mC4
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:49>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:45>
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_0 = __this->___planets;
 		V_0 = L_0;
 		V_1 = 0;
@@ -3306,14 +3306,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSystemController_UpdatePlanets_mC4
 
 IL_000b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:49>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:45>
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		V_2 = L_4;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:51>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:47>
 		RuntimeObject* L_5 = __this->___ephemeris;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_6 = V_2;
 		NullCheck(L_6);
@@ -3323,7 +3323,7 @@ IL_000b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = InterfaceFuncInvoker2< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, int32_t, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(0, IPlanetEphemerisService_tBE8082A231527B804C437A797C7F14AFADE4F95F_il2cpp_TypeInfo_var, L_5, L_7, L_8);
 		V_3 = L_9;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:52>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:48>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_10 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_3;
 		NullCheck(L_10);
@@ -3334,7 +3334,7 @@ IL_000b:
 
 IL_002d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:49>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:45>
 		int32_t L_13 = V_1;
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_14 = V_0;
 		NullCheck(L_14);
@@ -3344,7 +3344,7 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:54>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/PlanetSystemController.cs:50>
 		return;
 	}
 }
@@ -3600,7 +3600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimulationUIController_ToggleOrbits_m757
 		bool L_2 = L_1->___showOrbits;
 		NullCheck(L_0);
 		L_0->___showOrbits = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:31>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:30>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_3;
 		L_3 = Object_FindObjectsOfType_TisPlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5_m30A908698A5257661717ADDCD39589B7B1297ED0(Object_FindObjectsOfType_TisPlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5_m30A908698A5257661717ADDCD39589B7B1297ED0_RuntimeMethod_var);
@@ -3611,13 +3611,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimulationUIController_ToggleOrbits_m757
 
 IL_0023:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:31>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:30>
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_4 = V_0;
 		int32_t L_5 = V_1;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:31>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)0);
 		SolarSystemConfig_tE69174DA3F19231A84DF400DC89DAEF9BEC67679* L_9 = __this->___config;
 		NullCheck(L_9);
@@ -3630,7 +3630,7 @@ IL_0023:
 
 IL_0040:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:31>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:30>
 		int32_t L_12 = V_1;
 		PlanetViewU5BU5D_tE9962DCDF581BEFB6A9B8CD706D54C687D5B21A5* L_13 = V_0;
 		NullCheck(L_13);
@@ -3640,7 +3640,7 @@ IL_0040:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:34>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:33>
 		SolarSystemConfig_tE69174DA3F19231A84DF400DC89DAEF9BEC67679* L_14 = __this->___config;
 		NullCheck(L_14);
 		bool L_15 = L_14->___showOrbits;
@@ -3650,7 +3650,7 @@ IL_0040:
 		L_18 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralAFA77CFE8F47953A66F644E53CD727D9D197FF29, L_17, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_18, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:35>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/SimulationUIController.cs:34>
 		return;
 	}
 }
@@ -3734,7 +3734,7 @@ IL_0015:
 
 IL_0016:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:22>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:21>
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* L_3 = (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D*)(&__this->___current);
 		float L_4;
 		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
@@ -3746,12 +3746,12 @@ IL_0016:
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_8;
 		L_8 = DateTime_AddDays_m9DC06105845A82FEAF697D5E30308ABD49E5721B(L_3, ((double)((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_4, L_5)), L_7))), NULL);
 		__this->___current = L_8;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:23>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:22>
 		TimeModel_t16071A688191058375A1AF75A4717489DC8F76EC* L_9 = __this->___model;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_10 = __this->___current;
 		NullCheck(L_9);
 		TimeModel_SetTime_mD352602897B5A617FEA7F0CD583204C0A5D886D0(L_9, L_10, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:24>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Controllers/TimeController.cs:23>
 		return;
 	}
 }
@@ -3800,7 +3800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_14;
 	memset((&V_14), 0, sizeof(V_14));
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:19>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:18>
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0 = ___1_t;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1;
 		memset((&L_1), 0, sizeof(L_1));
@@ -3813,8 +3813,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		double L_3;
 		L_3 = TimeSpan_get_TotalDays_m7B3557D0DD79E39DFC6C08BAC756B1B5DE2D4108((&V_14), NULL);
 		V_0 = ((float)(((float)L_3)/(36525.0f)));
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:19>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:20>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:21>
 		int32_t L_4 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5;
 		L_5 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_4, 0, NULL);
@@ -3829,8 +3829,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_11 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		float L_12 = V_0;
 		V_1 = ((float)il2cpp_codegen_add(L_7, ((float)il2cpp_codegen_multiply(L_11, L_12))));
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:21>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:22>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:23>
 		int32_t L_13 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_14;
 		L_14 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_13, 4, NULL);
@@ -3845,8 +3845,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 		float L_21 = V_0;
 		V_2 = ((float)il2cpp_codegen_add(L_16, ((float)il2cpp_codegen_multiply(L_20, L_21))));
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:23>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:24>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:25>
 		int32_t L_22 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_23;
 		L_23 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_22, 5, NULL);
@@ -3861,16 +3861,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_29 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
 		float L_30 = V_0;
 		V_3 = ((float)il2cpp_codegen_add(L_25, ((float)il2cpp_codegen_multiply(L_29, L_30))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:26>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:25>
 		float L_31 = V_2;
 		float L_32 = V_3;
 		V_4 = ((float)il2cpp_codegen_subtract(L_31, L_32));
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:26>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:27>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:28>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:29>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:30>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:31>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:32>
 		int32_t L_33 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_34;
 		L_34 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_33, 3, NULL);
@@ -3924,11 +3924,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_68;
 		L_68 = cosf(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply((0.0174532924f), L_66)), L_67)));
 		V_5 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_36, ((float)il2cpp_codegen_multiply(L_40, L_41)))), L_42)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_46, L_47)), L_48)))), ((float)il2cpp_codegen_multiply(L_52, L_58)))), ((float)il2cpp_codegen_multiply(L_62, L_68))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:34>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:33>
 		float L_69 = V_5;
 		V_5 = ((float)il2cpp_codegen_subtract((fmodf(L_69, (360.0f))), (180.0f)));
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:35>
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:36>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:37>
 		int32_t L_70 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_71;
 		L_71 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_70, 1, NULL);
@@ -3943,23 +3943,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_77 = (L_75)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
 		float L_78 = V_0;
 		V_6 = ((float)il2cpp_codegen_add(L_73, ((float)il2cpp_codegen_multiply(L_77, L_78))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:37>
 		float L_79 = V_6;
 		V_7 = ((float)(((float)il2cpp_codegen_multiply(L_79, (180.0f)))/(3.14159274f)));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:41>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:40>
 		float L_80 = V_5;
 		float L_81 = V_7;
 		float L_82 = V_5;
 		float L_83;
 		L_83 = sinf(((float)il2cpp_codegen_multiply((0.0174532924f), L_82)));
 		V_8 = ((double)((float)il2cpp_codegen_subtract(L_80, ((float)il2cpp_codegen_multiply(L_81, L_83)))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:44>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:43>
 		V_10 = 0;
 	}
 
 IL_0125:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:52>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:46>
 		float L_84 = V_5;
 		double L_85 = V_8;
 		float L_86 = V_7;
@@ -3967,14 +3967,14 @@ IL_0125:
 		float L_88;
 		L_88 = sinf(((float)((double)il2cpp_codegen_multiply((0.01745329238474369), L_87))));
 		V_9 = ((double)il2cpp_codegen_add(((double)il2cpp_codegen_subtract(((double)L_84), L_85)), ((double)((float)il2cpp_codegen_multiply(L_86, L_88)))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:53>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:47>
 		double L_89 = V_8;
 		double L_90 = V_9;
 		V_8 = ((double)il2cpp_codegen_add(L_89, L_90));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:54>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:48>
 		int32_t L_91 = V_10;
 		V_10 = ((int32_t)il2cpp_codegen_add(L_91, 1));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:55>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:49>
 		double L_92 = V_9;
 		float L_93;
 		L_93 = fabsf(((float)L_92));
@@ -3993,14 +3993,14 @@ IL_0125:
 
 IL_016b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:57>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:51>
 		float L_95 = V_1;
 		double L_96 = V_8;
 		float L_97;
 		L_97 = cosf(((float)((double)il2cpp_codegen_multiply((0.01745329238474369), L_96))));
 		float L_98 = V_6;
 		V_11 = ((float)il2cpp_codegen_multiply(L_95, ((float)il2cpp_codegen_subtract(L_97, L_98))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:58>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:52>
 		float L_99 = V_1;
 		float L_100 = V_6;
 		float L_101 = V_6;
@@ -4010,8 +4010,8 @@ IL_016b:
 		float L_104;
 		L_104 = sinf(((float)((double)il2cpp_codegen_multiply((0.01745329238474369), L_103))));
 		V_12 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_99, L_102)), L_104));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:60>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:61>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:54>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:55>
 		int32_t L_105 = ___0_p;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_106;
 		L_106 = PlanetData_GetKeplerParameter_m2C3BE8F0E781BC5C81A72C4FF007B41D1052B2FE(L_105, 2, NULL);
@@ -4026,12 +4026,12 @@ IL_016b:
 		float L_112 = (L_110)->GetAt(static_cast<il2cpp_array_size_t>(L_111));
 		float L_113 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_108, ((float)il2cpp_codegen_multiply(L_112, L_113))));
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:63>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:64>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:65>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:66>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:67>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:68>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:57>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:58>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:59>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:60>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:61>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:62>
 		float L_114 = V_4;
 		float L_115;
 		L_115 = cosf(((float)il2cpp_codegen_multiply((0.0174532924f), L_114)));
@@ -4204,7 +4204,7 @@ IL_002b:
 
 IL_004e:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:79>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:73>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = L_2;
 		NullCheck(L_3);
@@ -4214,7 +4214,7 @@ IL_004e:
 
 IL_005d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:81>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:75>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = L_4;
 		NullCheck(L_5);
@@ -4227,7 +4227,7 @@ IL_005d:
 
 IL_0074:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:83>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:77>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = L_7;
 		NullCheck(L_8);
@@ -4240,7 +4240,7 @@ IL_0074:
 
 IL_008b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:85>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:79>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_10 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_11 = L_10;
 		NullCheck(L_11);
@@ -4253,7 +4253,7 @@ IL_008b:
 
 IL_00a2:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:87>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:81>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_13 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_14 = L_13;
 		NullCheck(L_14);
@@ -4266,7 +4266,7 @@ IL_00a2:
 
 IL_00b9:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:89>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:83>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_16 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_17 = L_16;
 		NullCheck(L_17);
@@ -4279,7 +4279,7 @@ IL_00b9:
 
 IL_00d0:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:91>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:85>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_19 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		return L_19;
 	}
@@ -4321,7 +4321,7 @@ IL_00d7:
 
 IL_00fa:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:97>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:91>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_21 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_22 = L_21;
 		NullCheck(L_22);
@@ -4334,7 +4334,7 @@ IL_00fa:
 
 IL_0111:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:99>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:93>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_24 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = L_24;
 		NullCheck(L_25);
@@ -4347,7 +4347,7 @@ IL_0111:
 
 IL_0128:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:101>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:95>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_27 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_28 = L_27;
 		NullCheck(L_28);
@@ -4360,7 +4360,7 @@ IL_0128:
 
 IL_013f:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:103>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:97>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_30 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_31 = L_30;
 		NullCheck(L_31);
@@ -4373,7 +4373,7 @@ IL_013f:
 
 IL_0156:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:105>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:99>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_33 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_34 = L_33;
 		NullCheck(L_34);
@@ -4386,7 +4386,7 @@ IL_0156:
 
 IL_016d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:107>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:101>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_36 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_37 = L_36;
 		NullCheck(L_37);
@@ -4399,7 +4399,7 @@ IL_016d:
 
 IL_0184:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:109>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:103>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_39 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		return L_39;
 	}
@@ -4441,7 +4441,7 @@ IL_018b:
 
 IL_01ae:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:115>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:109>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_41 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_42 = L_41;
 		NullCheck(L_42);
@@ -4454,7 +4454,7 @@ IL_01ae:
 
 IL_01c5:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:117>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:111>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_44 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_45 = L_44;
 		NullCheck(L_45);
@@ -4467,7 +4467,7 @@ IL_01c5:
 
 IL_01dc:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:119>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:113>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_47 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_48 = L_47;
 		NullCheck(L_48);
@@ -4480,7 +4480,7 @@ IL_01dc:
 
 IL_01f3:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:121>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:115>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_50 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_51 = L_50;
 		NullCheck(L_51);
@@ -4493,7 +4493,7 @@ IL_01f3:
 
 IL_020a:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:123>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:117>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_53 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_54 = L_53;
 		NullCheck(L_54);
@@ -4506,7 +4506,7 @@ IL_020a:
 
 IL_0221:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:125>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:119>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_56 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_57 = L_56;
 		NullCheck(L_57);
@@ -4519,7 +4519,7 @@ IL_0221:
 
 IL_0238:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:127>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:121>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_59 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		return L_59;
 	}
@@ -4561,7 +4561,7 @@ IL_023f:
 
 IL_0262:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:133>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:127>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_61 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_62 = L_61;
 		NullCheck(L_62);
@@ -4574,7 +4574,7 @@ IL_0262:
 
 IL_0279:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:135>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:129>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_64 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_65 = L_64;
 		NullCheck(L_65);
@@ -4587,7 +4587,7 @@ IL_0279:
 
 IL_0290:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:137>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:131>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_67 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_68 = L_67;
 		NullCheck(L_68);
@@ -4600,7 +4600,7 @@ IL_0290:
 
 IL_02a7:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:139>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:133>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_70 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_71 = L_70;
 		NullCheck(L_71);
@@ -4613,7 +4613,7 @@ IL_02a7:
 
 IL_02be:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:141>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:135>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_73 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_74 = L_73;
 		NullCheck(L_74);
@@ -4626,7 +4626,7 @@ IL_02be:
 
 IL_02d5:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:143>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:137>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_76 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_77 = L_76;
 		NullCheck(L_77);
@@ -4639,7 +4639,7 @@ IL_02d5:
 
 IL_02ec:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:145>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:139>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_79 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		return L_79;
 	}
@@ -4697,7 +4697,7 @@ IL_02f3:
 
 IL_0326:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:151>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:145>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_81 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_82 = L_81;
 		NullCheck(L_82);
@@ -4710,7 +4710,7 @@ IL_0326:
 
 IL_033d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:153>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:147>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_84 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_85 = L_84;
 		NullCheck(L_85);
@@ -4723,7 +4723,7 @@ IL_033d:
 
 IL_0354:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:155>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:149>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_87 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_88 = L_87;
 		NullCheck(L_88);
@@ -4736,7 +4736,7 @@ IL_0354:
 
 IL_036b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:157>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:151>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_90 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_91 = L_90;
 		NullCheck(L_91);
@@ -4749,7 +4749,7 @@ IL_036b:
 
 IL_0382:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:159>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:153>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_93 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_94 = L_93;
 		NullCheck(L_94);
@@ -4762,7 +4762,7 @@ IL_0382:
 
 IL_0399:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:161>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:155>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_96 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_97 = L_96;
 		NullCheck(L_97);
@@ -4775,7 +4775,7 @@ IL_0399:
 
 IL_03b0:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:163>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:157>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_99 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_100 = L_99;
 		NullCheck(L_100);
@@ -4785,7 +4785,7 @@ IL_03b0:
 
 IL_03bf:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:165>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:159>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_101 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_102 = L_101;
 		NullCheck(L_102);
@@ -4795,7 +4795,7 @@ IL_03bf:
 
 IL_03ce:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:167>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:161>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_103 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_104 = L_103;
 		NullCheck(L_104);
@@ -4805,7 +4805,7 @@ IL_03ce:
 
 IL_03dd:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:169>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:163>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_105 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_106 = L_105;
 		NullCheck(L_106);
@@ -4866,7 +4866,7 @@ IL_03ec:
 
 IL_041f:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:176>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:170>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_108 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_109 = L_108;
 		NullCheck(L_109);
@@ -4879,7 +4879,7 @@ IL_041f:
 
 IL_0436:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:178>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:172>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_111 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_112 = L_111;
 		NullCheck(L_112);
@@ -4892,7 +4892,7 @@ IL_0436:
 
 IL_044d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:180>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:174>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_114 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_115 = L_114;
 		NullCheck(L_115);
@@ -4905,7 +4905,7 @@ IL_044d:
 
 IL_0464:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:182>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:176>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_117 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_118 = L_117;
 		NullCheck(L_118);
@@ -4918,7 +4918,7 @@ IL_0464:
 
 IL_047b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:184>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:178>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_120 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_121 = L_120;
 		NullCheck(L_121);
@@ -4931,7 +4931,7 @@ IL_047b:
 
 IL_0492:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:186>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:180>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_123 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_124 = L_123;
 		NullCheck(L_124);
@@ -4944,7 +4944,7 @@ IL_0492:
 
 IL_04a9:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:188>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:182>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_126 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_127 = L_126;
 		NullCheck(L_127);
@@ -4954,7 +4954,7 @@ IL_04a9:
 
 IL_04b8:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:190>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:184>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_128 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_129 = L_128;
 		NullCheck(L_129);
@@ -4964,7 +4964,7 @@ IL_04b8:
 
 IL_04c7:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:192>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:186>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_130 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_131 = L_130;
 		NullCheck(L_131);
@@ -4974,7 +4974,7 @@ IL_04c7:
 
 IL_04d6:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:194>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:188>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_132 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_133 = L_132;
 		NullCheck(L_133);
@@ -5035,7 +5035,7 @@ IL_04e5:
 
 IL_0518:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:201>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:195>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_135 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_136 = L_135;
 		NullCheck(L_136);
@@ -5048,7 +5048,7 @@ IL_0518:
 
 IL_052f:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:203>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:197>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_138 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_139 = L_138;
 		NullCheck(L_139);
@@ -5061,7 +5061,7 @@ IL_052f:
 
 IL_0546:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:205>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:199>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_141 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_142 = L_141;
 		NullCheck(L_142);
@@ -5074,7 +5074,7 @@ IL_0546:
 
 IL_055d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:207>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:201>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_144 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_145 = L_144;
 		NullCheck(L_145);
@@ -5087,7 +5087,7 @@ IL_055d:
 
 IL_0574:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:209>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:203>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_147 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_148 = L_147;
 		NullCheck(L_148);
@@ -5100,7 +5100,7 @@ IL_0574:
 
 IL_058b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:211>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:205>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_150 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_151 = L_150;
 		NullCheck(L_151);
@@ -5113,7 +5113,7 @@ IL_058b:
 
 IL_05a2:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:213>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:207>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_153 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_154 = L_153;
 		NullCheck(L_154);
@@ -5123,7 +5123,7 @@ IL_05a2:
 
 IL_05b1:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:215>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:209>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_155 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_156 = L_155;
 		NullCheck(L_156);
@@ -5133,7 +5133,7 @@ IL_05b1:
 
 IL_05c0:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:217>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:211>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_157 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_158 = L_157;
 		NullCheck(L_158);
@@ -5143,7 +5143,7 @@ IL_05c0:
 
 IL_05cf:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:219>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:213>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_159 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_160 = L_159;
 		NullCheck(L_160);
@@ -5204,7 +5204,7 @@ IL_05de:
 
 IL_0611:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:226>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:220>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_162 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_163 = L_162;
 		NullCheck(L_163);
@@ -5217,7 +5217,7 @@ IL_0611:
 
 IL_0628:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:228>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:222>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_165 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_166 = L_165;
 		NullCheck(L_166);
@@ -5230,7 +5230,7 @@ IL_0628:
 
 IL_063f:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:230>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:224>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_168 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_169 = L_168;
 		NullCheck(L_169);
@@ -5243,7 +5243,7 @@ IL_063f:
 
 IL_0656:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:232>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:226>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_171 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_172 = L_171;
 		NullCheck(L_172);
@@ -5256,7 +5256,7 @@ IL_0656:
 
 IL_066d:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:234>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:228>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_174 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_175 = L_174;
 		NullCheck(L_175);
@@ -5269,7 +5269,7 @@ IL_066d:
 
 IL_0684:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:236>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:230>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_177 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_178 = L_177;
 		NullCheck(L_178);
@@ -5282,7 +5282,7 @@ IL_0684:
 
 IL_069b:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:238>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:232>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_180 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_181 = L_180;
 		NullCheck(L_181);
@@ -5292,7 +5292,7 @@ IL_069b:
 
 IL_06aa:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:240>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:234>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_182 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_183 = L_182;
 		NullCheck(L_183);
@@ -5302,7 +5302,7 @@ IL_06aa:
 
 IL_06b9:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:242>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:236>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_184 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_185 = L_184;
 		NullCheck(L_185);
@@ -5312,7 +5312,7 @@ IL_06b9:
 
 IL_06c8:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:244>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:238>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_186 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_187 = L_186;
 		NullCheck(L_187);
@@ -5322,7 +5322,7 @@ IL_06c8:
 
 IL_06d7:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:248>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Data/PlanetData.cs:242>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_188 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)2);
 		return L_188;
 	}
@@ -5430,7 +5430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableInteractionLogger_Awake_m1916A30FA3
 		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:9>
 		XRGrabInteractable_tAE7E2F24377399C9B5159179E4B43EA6AA55531B* L_0;
 		L_0 = Component_GetComponent_TisXRGrabInteractable_tAE7E2F24377399C9B5159179E4B43EA6AA55531B_m49377F1D0DBAB9BDC59DFC6851E9A5D687717C14(__this, Component_GetComponent_TisXRGrabInteractable_tAE7E2F24377399C9B5159179E4B43EA6AA55531B_m49377F1D0DBAB9BDC59DFC6851E9A5D687717C14_RuntimeMethod_var);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:12>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:11>
 		XRGrabInteractable_tAE7E2F24377399C9B5159179E4B43EA6AA55531B* L_1 = L_0;
 		NullCheck(L_1);
 		SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0* L_2;
@@ -5439,7 +5439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableInteractionLogger_Awake_m1916A30FA3
 		UnityAction_1__ctor_mEE39E1A87376378311B4931978E8E07E589E9A24(L_3, __this, (intptr_t)((void*)TableInteractionLogger_OnGrabbed_mF510EA214E1F10C0AEA080DAE51D5143D4F7B4C4_RuntimeMethod_var), NULL);
 		NullCheck(L_2);
 		UnityEvent_1_AddListener_mAE71681FB0832FD7DBA813E5ADDBA574EA32EED2(L_2, L_3, UnityEvent_1_AddListener_mAE71681FB0832FD7DBA813E5ADDBA574EA32EED2_RuntimeMethod_var);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:13>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:12>
 		NullCheck(L_1);
 		SelectExitEvent_t15DC0A39F9657BA9E6BAE6250D8D64C9671201F6* L_4;
 		L_4 = XRBaseInteractable_get_selectExited_m0296CEBB4427F63D460984FC32FA0C9C7ACED5A7_inline(L_1, NULL);
@@ -5447,7 +5447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableInteractionLogger_Awake_m1916A30FA3
 		UnityAction_1__ctor_mD74501F5FCCC37863163D5E7155B6C8B9B366C40(L_5, __this, (intptr_t)((void*)TableInteractionLogger_OnReleased_mF05A881CC4E1E3DE459C1E862A4EB99EF4DECDED_RuntimeMethod_var), NULL);
 		NullCheck(L_4);
 		UnityEvent_1_AddListener_mB662756036996A6B6F83F6492CE9E26797AF9602(L_4, L_5, UnityEvent_1_AddListener_mB662756036996A6B6F83F6492CE9E26797AF9602_RuntimeMethod_var);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:14>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:13>
 		return;
 	}
 }
@@ -5462,7 +5462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableInteractionLogger_OnGrabbed_mF510EA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:16>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:15>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralAFDBB952AA5AC790DD38A9D7011E28C3230D3FB0, NULL);
 		return;
@@ -5479,7 +5479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableInteractionLogger_OnReleased_mF05A8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:18>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Interaction/TableInteractionLogger.cs:17>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral144781AFE758166299B4E92795C1255BA466656B, NULL);
 		return;
@@ -5821,7 +5821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetInfoPanel_Update_mDCC3695B9215C36F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:27>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:26>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___targetPlanet;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5832,7 +5832,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetInfoPanel_Update_mDCC3695B9215C36F
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:29>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:28>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___targetPlanet;
@@ -5852,7 +5852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetInfoPanel_Update_mDCC3695B9215C36F
 
 IL_0039:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:31>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_9;
 		L_9 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -5864,8 +5864,8 @@ IL_0039:
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:35>
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:34>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
 		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
@@ -5905,7 +5905,7 @@ IL_0039:
 
 IL_0093:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetInfoPanel.cs:36>
 		return;
 	}
 }
@@ -6038,7 +6038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSelectable_Awake_m6F9EE508EA302A6E
 		UnityAction_1__ctor_mEE39E1A87376378311B4931978E8E07E589E9A24(L_2, __this, (intptr_t)((void*)PlanetSelectable_OnSelected_m8943D8F036AF93F9BD213A94F7ABFA901189AF52_RuntimeMethod_var), NULL);
 		NullCheck(L_1);
 		UnityEvent_1_AddListener_mAE71681FB0832FD7DBA813E5ADDBA574EA32EED2(L_1, L_2, UnityEvent_1_AddListener_mAE71681FB0832FD7DBA813E5ADDBA574EA32EED2_RuntimeMethod_var);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:16>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:15>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_3 = __this->___planetView;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -6049,7 +6049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSelectable_Awake_m6F9EE508EA302A6E
 		}
 	}
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:16>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:15>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_5;
 		L_5 = Component_GetComponent_TisPlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5_m1E1BF68A2FE1B54A24B1319C91A91B6CF353BB53(__this, Component_GetComponent_TisPlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5_m1E1BF68A2FE1B54A24B1319C91A91B6CF353BB53_RuntimeMethod_var);
 		__this->___planetView = L_5;
@@ -6058,7 +6058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSelectable_Awake_m6F9EE508EA302A6E
 
 IL_0036:
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:17>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:16>
 		return;
 	}
 }
@@ -6077,7 +6077,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSelectable_OnSelected_m8943D8F036A
 	Action_1_tE5A7776D8AA76B01F90746B14D822BB0DD990C97* G_B2_0 = NULL;
 	Action_1_tE5A7776D8AA76B01F90746B14D822BB0DD990C97* G_B1_0 = NULL;
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:21>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:20>
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_0 = __this->___planetView;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___planet;
@@ -6087,7 +6087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetSelectable_OnSelected_m8943D8F036A
 		L_4 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral166045426626A9FFBD398D3143CA09E8780B479D, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:22>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:21>
 		Action_1_tE5A7776D8AA76B01F90746B14D822BB0DD990C97* L_5 = ((PlanetSelectable_t954CD76C7D7BF93862A6B4DC851343B3CD88D819_StaticFields*)il2cpp_codegen_static_fields_for(PlanetSelectable_t954CD76C7D7BF93862A6B4DC851343B3CD88D819_il2cpp_TypeInfo_var))->___OnPlanetSelected;
 		Action_1_tE5A7776D8AA76B01F90746B14D822BB0DD990C97* L_6 = L_5;
 		if (L_6)
@@ -6106,7 +6106,7 @@ IL_0029:
 		PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* L_7 = __this->___planetView;
 		NullCheck(G_B2_0);
 		Action_1_Invoke_m4C4BC7F05AD378F55D5044733BB3898468ECD8F9_inline(G_B2_0, L_7, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:23>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetScalable.cs:22>
 		return;
 	}
 }
@@ -6142,7 +6142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:11>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:10>
 		int32_t L_0 = __this->___planet;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(Planet_t2E7D91CC5C418DA36A4A9D5904C017B41636E873_il2cpp_TypeInfo_var, &L_1);
@@ -6151,7 +6151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_4, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:12>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:11>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_0;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
@@ -6163,7 +6163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 		L_8 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_7, NULL);
 		NullCheck(L_6);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_6, L_8, (bool)0, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:13>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:12>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
 		NullCheck(L_9);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
@@ -6172,30 +6172,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 		L_11 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_10);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_10, L_11, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:16>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:14>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
 		NullCheck(L_12);
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_13;
 		L_13 = GameObject_AddComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mF8C0D953BCBFDD5A01A09ADB67EB04F0D677A056(L_12, GameObject_AddComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mF8C0D953BCBFDD5A01A09ADB67EB04F0D677A056_RuntimeMethod_var);
 		__this->___orbitLine = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___orbitLine), (void*)L_13);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:17>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:15>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_14 = __this->___orbitLine;
 		NullCheck(L_14);
 		LineRenderer_set_useWorldSpace_m0204DB2541CC37DC4DC15DA15FD5A66EDC507CE8(L_14, (bool)0, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:18>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:16>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_15 = __this->___orbitLine;
 		NullCheck(L_15);
 		LineRenderer_set_loop_mC7FBA197A227B62F11DE01264C68357FBA475058(L_15, (bool)1, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:19>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:17>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_16 = __this->___orbitLine;
 		NullCheck(L_16);
 		LineRenderer_set_startWidth_m3899722E198D636DB216CB61C980214707069F4A(L_16, (0.00200000009f), NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:20>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:18>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_17 = __this->___orbitLine;
 		NullCheck(L_17);
 		LineRenderer_set_endWidth_mC7260401655C8BE1CBDFB832009295C89613F81D(L_17, (0.00200000009f), NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:22>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:20>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_18 = __this->___orbitLine;
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_19;
 		L_19 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(_stringLiteral975A5F46FC6E6D8BC7943A3A38CEA489C122E4F1, NULL);
@@ -6203,21 +6203,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 		Material__ctor_m7FDF47105D66D19591BE505A0C42B0F90D88C9BF(L_20, L_19, NULL);
 		NullCheck(L_18);
 		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(L_18, L_20, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:25>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:22>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_21 = __this->___orbitLine;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22;
 		memset((&L_22), 0, sizeof(L_22));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_22), (1.0f), (1.0f), (1.0f), (0.300000012f), NULL);
 		NullCheck(L_21);
 		LineRenderer_set_startColor_mF72FAB20C09372FC8F2CBFCBD837FA02A87FBA91(L_21, L_22, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:26>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:23>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_23 = __this->___orbitLine;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
 		memset((&L_24), 0, sizeof(L_24));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_24), (1.0f), (1.0f), (1.0f), (0.300000012f), NULL);
 		NullCheck(L_23);
 		LineRenderer_set_endColor_m6AF26E0174434828BC6EF1BAC1FE188084819D9D(L_23, L_24, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:28>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:25>
 		return;
 	}
 }
@@ -6225,13 +6225,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_Awake_m540256B0A2860331CB8B3E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_SetPosition_m7111B3E7814EC1C90865817F43A4AB97CEF5323A (PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_pos, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:32>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:29>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_pos;
 		NullCheck(L_0);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_0, L_1, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:33>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:30>
 		return;
 	}
 }
@@ -6239,23 +6239,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_SetPosition_m7111B3E7814EC1C9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanetView_SetOrbitPoints_mD49E7E4AEE7D02564D2C398462567AC62C42729A (PlanetView_tCC6EA1B82266B083E08C0665A0A5DD18DB51EFE5* __this, Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___0_points, bool ___1_show, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:36>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:33>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_0 = __this->___orbitLine;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_1 = ___0_points;
 		NullCheck(L_1);
 		NullCheck(L_0);
 		LineRenderer_set_positionCount_m2001FB4044053895ECBE897AB833284F3300B205(L_0, ((int32_t)(((RuntimeArray*)L_1)->max_length)), NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:37>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:34>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_2 = __this->___orbitLine;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_3 = ___0_points;
 		NullCheck(L_2);
 		LineRenderer_SetPositions_m7F7B7B54428437D0BF5256D4C82F92180B577B02(L_2, L_3, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:38>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:35>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_4 = __this->___orbitLine;
 		bool L_5 = ___1_show;
 		NullCheck(L_4);
 		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_4, L_5, NULL);
-		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:39>
+		//<source_info:/Users/hugo/RVSI/Solar-System-Workbench/Assets/Scripts/Views/PlanetView.cs:36>
 		return;
 	}
 }
