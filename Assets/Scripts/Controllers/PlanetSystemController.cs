@@ -6,7 +6,7 @@ public class PlanetSystemController
     TimeModel timeModel;
     IPlanetEphemerisService ephemeris;
     PlanetView[] planets;
-    SolarSystemConfig config; // On ajoute la config pour lire le booléen "showOrbits"
+    SolarSystemConfig config;
 
     public PlanetSystemController(TimeModel timeModel, IPlanetEphemerisService ephemeris, PlanetView[] planets, SolarSystemConfig config)
     {
@@ -15,17 +15,14 @@ public class PlanetSystemController
         this.planets = planets;
         this.config = config;
 
-        // On écoute le temps pour bouger les planètes
         this.timeModel.OnTimeChanged += UpdatePlanets;
 
-        // NOUVEAU : On dessine les orbites une seule fois au démarrage
         InitializeOrbits();
     }
 
     void InitializeOrbits()
     {
-        // Neptune met ~60 000 jours à faire un tour. 
-        // Avec des sauts de 10 jours, il nous faut 6000 points pour fermer son cercle.
+
         int samples = 6000; 
         DateTime start = DateTime.Now;
 
@@ -39,7 +36,6 @@ public class PlanetSystemController
                 points[i] = ephemeris.GetPlanetPosition(p.planet, t);
             }
 
-            // On envoie le tableau pré-calculé à la vue, et on regarde la config pour l'afficher ou non
             p.SetOrbitPoints(points, config.showOrbits);
         }
     }

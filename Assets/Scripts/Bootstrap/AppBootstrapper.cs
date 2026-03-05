@@ -15,7 +15,6 @@ public class AppBootstrapper : MonoBehaviour
 
         timeModel = new TimeModel();
         
-        // Pass the config into the service
         var ephemeris = new PlanetEphemerisService(config);
 
         controller = new PlanetSystemController(timeModel, ephemeris, planets, config);

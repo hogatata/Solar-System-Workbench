@@ -9,7 +9,6 @@ public static class PlanetData
     public enum KeplerParameter { a, e, I, L, longPeri, longNode, b, c, s, f}
 
     /// <summary>
-    /// Get planet coordinates at a given time (in AU)
     /// </summary>
     /// <param name="p"></param>
     /// <param name="t"></param>
@@ -40,15 +39,10 @@ public static class PlanetData
 
         double E = M - (e_star * Mathf.Sin(Mathf.Deg2Rad*M));
         double deltaE;
-        //double deltaM;
+
         int i = 0;
         do
         {
-            //deltaM = M - E + (e_star * Mathf.Sin((float)(Mathf.Deg2Rad*E)));
-            //deltaE = deltaM / (1 - (e_star * Mathf.Cos((float)(Mathf.Deg2Rad*E))));
-            
-            // Don't know why the serie do not converge with order 2 term (see above)
-            // Using only order 1 term instead
             deltaE = M - E + (e_star * Mathf.Sin((float)(Mathf.Deg2Rad * E)));
             E += deltaE;
             i++;

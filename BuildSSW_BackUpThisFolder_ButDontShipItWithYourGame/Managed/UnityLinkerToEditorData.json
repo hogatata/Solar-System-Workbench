@@ -1053,7 +1053,9 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Boot.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

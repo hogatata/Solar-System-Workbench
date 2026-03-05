@@ -10,7 +10,6 @@ Library: /Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/hugo/RVSI/Solar-System-Workbench/Temp/Burst
---debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/6000.3.7f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/hugo/RVSI/Solar-System-Workbench/Library/Burst
 --output=/Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
@@ -129,7 +128,6 @@ Library: /Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/
 --float-mode=Fast
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/hugo/RVSI/Solar-System-Workbench/Temp/Burst
---debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/6000.3.7f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/hugo/RVSI/Solar-System-Workbench/Library/Burst
 --output=/Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
@@ -148,7 +146,6 @@ Library: /Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/hugo/RVSI/Solar-System-Workbench/Temp/Burst
---debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/6000.3.7f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/hugo/RVSI/Solar-System-Workbench/Library/Burst
 --output=/Users/hugo/RVSI/Solar-System-Workbench/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated

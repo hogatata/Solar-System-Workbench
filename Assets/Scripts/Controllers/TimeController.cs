@@ -15,10 +15,10 @@ public class TimeController : MonoBehaviour
     }
 
     void Update()
-    {
-        if (!model.IsPlaying) return;
+{
+    if (model == null || !model.IsPlaying) return;
 
-        current = current.AddDays(Time.deltaTime * secondsPerDay);
-        model.SetTime(current);
-    }
+    current = current.AddDays(Time.deltaTime * secondsPerDay * model.timeScale);
+    model.SetTime(current);
+}
 }

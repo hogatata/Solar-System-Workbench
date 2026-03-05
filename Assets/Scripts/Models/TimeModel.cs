@@ -6,9 +6,11 @@ public class TimeModel
 
     public float TimeScale { get; private set; } = 1f;
 
-    public bool IsPlaying { get; private set; } = true;
+    public bool IsPlaying { get; set; } = true;
 
     public event Action<DateTime> OnTimeChanged;
+
+    public float timeScale = 1f;
 
     public void SetTime(DateTime t)
     {
